@@ -1,0 +1,36 @@
+.container{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container > form {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+
+.tasksTable{
+  width: 50vw;
+  height: 50vh;
+  text-align: center;
+  text-transform: capitalize;
+  border: 1px solid gray
+}
+
+.head{
+  height: 2rem;
+}
+
+.tasksItem > td, th{
+  border: 1px solid gray
+}
+
+.task-true > td{
+  background-color: #5FB924;
+  color: white;
+}
