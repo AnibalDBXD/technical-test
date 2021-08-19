@@ -36,8 +36,8 @@ import useForceUpdate from './hook/useForceUpdate';
 // const myProject = new Project([task1, task2, task3, task4]);
 // console.log(myProject)
 
+const myProject = new Project([]);
 function App(): JSX.Element {
-  const myProject = new Project([]);
   //Force update on update the tasks
   const forceUpdate = useForceUpdate();
 
@@ -49,7 +49,7 @@ function App(): JSX.Element {
   };
 
   const handleClear = (): void => {
-    myProject.clear();
+    setTasks(myProject.clear());
     forceUpdate();
   };
 
